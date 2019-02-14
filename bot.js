@@ -34,8 +34,8 @@ var ti={}
 ,attentions={};
 
 client.on('ready', function(){
-    var ms = 3 ;
-    var setGame = ['<o/help','Type <o/help','Maker by B','Maker by Be','Maker by Bea','Maker by Bear','Maker by BearB','Maker by BearBo','Maker by BearBoy'];
+    var ms = 60000 ;
+    var setGame = ['<o/help','Type <o/help','Maker by BearBo','Maker by BearBoy'];
     var i = -1;
     var j = 0;
     setInterval(function (){
