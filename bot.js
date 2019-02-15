@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const devs = ['389090790984515594'];
 const db = require('quick.db');
-const premium = ['470896018603376640']
+const premium = ['536928110055260170']
 const client = new Discord.Client();   
 const bot = new Discord.Client();   
 const giphy = require('giphy-api')();    
@@ -35,7 +35,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = ['ahelp','Type ahelp'];
+    var setGame = ['<o/help','Type <o/help'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -150,10 +150,10 @@ ${prefix}roll <number> / قرعة
 ${prefix}لو خيروك بطريقة حلوة / لو خيروك
 ${prefix}لعبة مريم / مريم
 ${prefix}فوائد ونصائح  / هل تعلم
-${prefix}يعطيك عقابات قاسية / عقاب 
+يعطيك عقابات قاسية / عقاب 
 =.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.=.
 welcome يتم الترحيب فى روم باسم
-G.setwelcomer <text channel name> لاختيار روم للترحيب
+${prefix}setwelcomer <text channel name> لاختيار روم للترحيب
 ${prefix}voiceonline / لتفعيل روم الفويس اونلاين
 **
    
@@ -306,7 +306,7 @@ client.on('message', function(msg) {
             .addField('``My ID``' , `[ ${client.user.id} ]` , true)
 			      .addField('``My Prefix``' , `[ ! ]` , true)
 			      .addField('``My Language``' , `[ Java Script ]` , true)
-			      .setFooter('By | 3bker')
+			      .setFooter('By | BearBoy01')
     })
 }
 });
@@ -393,7 +393,7 @@ client.on('message', message => {
             message.channel.send({embed: {
                 color: 3447003,
                 author: {
-                  name: '3bker Community ©\'s translator',
+                  name: 'BearBoy01 Community ©\'s translator',
                   icon_url: client.user.avatarURL
                 },
                 fields: [{
@@ -1435,7 +1435,7 @@ if (message.content.startsWith(prefix + 'points')) {
 });
 client.on('message', message => {
     if(message.content == '^vip-servers') {
-             if(!message.author.id === '434845976050794516') return;
+             if(!message.author.id === '536928110055260170') return;
     var gimg;
     var gname;
     var gmemb;
@@ -1896,7 +1896,7 @@ client.on('guildCreate', guild => {
      .setTitle('Click Here To Add Bot .!')
      .setURL('https://discordapp.com/oauth2/authorize?client_id=435392018693488641&scope=bot&permissions=2146958591')
   .setDescription(`**
-  New Server Add 3bker Community © ?
+  New Server Add BearBoy01 Community © ?
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
 client.channels.get("474127377245667328").sendEmbed(embed)
@@ -1910,7 +1910,7 @@ client.on('guildDelete', guild => {
   Server Kicked 3bker Community © :cry:
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
-client.channels.get("474127377245667328").sendEmbed(embed)
+client.channels.get("536928110055260170").sendEmbed(embed)
 });
 var type = [
     {
@@ -2736,7 +2736,7 @@ client.on('message', async msg => { // eslint-disable-line
 			        .setDescription(`**الرجآء من حضرتك إختيآر رقم المقطع** :
 ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
 //by ,$ ReBeL ء , ??#4777 'CODES SERVER'
-					.setFooter("3bker Community ©")
+					.setFooter("BearBoy01 Community ©")
 					msg.channel.sendEmbed(embed1).then(message =>{message.delete(20000)})
 					
 					// eslint-disable-next-line max-depth
@@ -2871,16 +2871,16 @@ function play(guild, song) {
 			serverQueue.songs.shift();//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
 			play(guild, serverQueue.songs[0]);
 		})//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
-		.on('error', error => console.error(error));//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
-	dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+		.on('error', error => console.error(error));
+	dispatcher.setVolumeLogarithmic(serverQueue.volume / 5);
 
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
 
 const adminprefix = "$vip";//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
 client.on('message', message => {//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
-  var argresult = message.content.split(` `).slice(1).join(' ');//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
-    if (!devs.includes(message.author.id)) return;//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
+  var argresult = message.content.split(` `).slice(1).join(' ');
+    if (!devs.includes(message.author.id)) return;
     message.reply("**`only for Bot Owner`**")
 if (message.content.startsWith(adminprefix + 'setgame')) {//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
   client.user.setGame(argresult);
@@ -2939,33 +2939,33 @@ client.on('message', message => {
 
 
 if (message.content.startsWith(prefix + 'playing')) {
-if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '536928110055260170') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
 client.user.setGame(argresult);
     message.channel.sendMessage(`**${argresult}** : تم تغيير الحالة`)
 } else
 
 if (message.content.startsWith(prefix + 'streem')) {
-if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '536928110055260170') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
 client.user.setGame(argresult, "http://twitch.tv/y04zgamer");
     message.channel.sendMessage(`**${argresult}** :تم تغيير الحالة الى ستريمنج`)
 } else
 
 if (message.content.startsWith(prefix + 'setname')) {
-if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '536928110055260170') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
   client.user.setUsername(argresult).then
       message.channel.sendMessage(`**${argresult}** : تم تغير الأسم`)
   return message.reply("**لا تستطيع تغير الأسم الا بعد ساعتين**");
 } else
 
 if (message.content.startsWith(prefix + 'setavatar')) {
-if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '536928110055260170') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
 client.user.setAvatar(argresult);
     message.channel.sendMessage(`**${argresult}** : تم تغير صورة البوت`);
 } else
 
 
 if (message.content.startsWith(prefix + 'watching')) {
-if (message.author.id !== '434845976050794516') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
+if (message.author.id !== '536928110055260170') return message.reply('** هذا الأمر فقط لصاحب البوت و شكراًً **')
     client.user.setActivity(argresult, {type : 'watching'});
  message.channel.sendMessage(`**${argresult}** : تم تغيير الووتشينق الى`)
 }
