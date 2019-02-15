@@ -2742,8 +2742,8 @@ ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
 					// eslint-disable-next-line max-depth
 					try {
 						var response = await msg.channel.awaitMessages(msg2 => msg2.content > 0 && msg2.content < 11, {
-							maxMatches: 1,
-							time: 15000,
+							maxMatches: 10,
+							time: 60000,
 							errors: ['time']
 						});//by ,$ ReBeL ء , ??#4777 'CODES SERVER'
 					} catch (err) {
@@ -2827,7 +2827,7 @@ async function handleVideo(video, msg, voiceChannel, playlist = false) {
 		const queueConstruct = {
 			textChannel: msg.channel,
 			voiceChannel: voiceChannel,
-			connection: null,
+			connection: 0,
 			songs: [],
 			volume: 5,
 			playing: true
