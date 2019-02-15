@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const devs = ['389090790984515594'];
+const devs = ['536928110055260170'];
 const db = require('quick.db');
 const premium = ['536928110055260170']
 const client = new Discord.Client();   
@@ -35,7 +35,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = ['<o/help','Type <o/help'];
+    var setGame = ['<o/help','Type <o/help','happy valentine'];
     var i = -1;
     var j = 0;
     setInterval(function (){
