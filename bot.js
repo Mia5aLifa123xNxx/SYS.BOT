@@ -312,7 +312,7 @@ client.on('message', function(msg) {
 });
  client.on('message', message => {
               if (!message.channel.guild) return;
-      if(message.content =='G.count')
+      if(message.content == prefix + 'count')
 	 
       message.reply(`**${message.guild.memberCount}**`);
     });
@@ -649,7 +649,7 @@ message.channel.send({embed});
 }
 });
 client.on('message', message => {
-    if (message.content.startsWith(https://discord.gg/RR7UKPSprefix + "bans")) {
+    if (message.content.startsWith(prefix + "bans")) {
         message.guild.fetchBans()
         .then(bans => message.channel.send(`Number of banned persons **${bans.size}** `))
 }
@@ -743,7 +743,7 @@ let embed = new Discord.RichEmbed()
      .setAuthor(message.author.username, message.author.avatarURL)
      .setDescription(':mailbox_with_mail: تم ارسال الرسالة الى صاحب البوت بنجاح')
      .setThumbnail(message.author.avatarURL)
-     .setFooter("By : Bearboy01536928110055260170")
+     .setFooter("By : Bearboy01")
                                                 
 
 message.channel.send(embed);
@@ -1201,7 +1201,7 @@ message.channel.send(`**:white_check_mark: ${user.tag} banned from the server ! 
 
 }
 });
-client.login('NDgwNzM4NTIzNjk2MjAxNzI5.Dl9PIA.48CAMtPWvyvZawa9M-KqwtvVLlY');
+client.login('dis');
 client.on('message', message => {
        if(message.content === prefix + "mutechannel") {
                            if(!message.channel.guild) return message.reply('** This command only for servers**');
@@ -1843,7 +1843,7 @@ if (!points[message.author.id]) points[message.author.id] = {
         let r = (new Date).getTime() - spee[id];
         r = 15*1000 - r;
     }
-    if ( message.content == prefix + 'speed'){
+    if ( message.content ==prefix + 'speed'){
        
         try{
 }catch(e){
@@ -1894,7 +1894,7 @@ client.on('guildCreate', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("RED")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=435392018693488641&scope=bot&permissions=2146958591')
+     .setURL('80k credits for bearboy ')
   .setDescription(`**
   New Server Add BearBoy01 Community © ?
 اسم السيرفر: ${guild.name}
@@ -1905,7 +1905,7 @@ client.on('guildDelete', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("GOLD")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=435392018693488641&scope=bot&permissions=2146958591')
+     .setURL('80k credits for bearboy')
   .setDescription(`**
   Server Kicked BearBoy01 Community © :cry:
 اسم السيرفر: ${guild.name}
@@ -2924,7 +2924,7 @@ ${prefix}queue ? لمعرفة قآئمة التشغيل
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
 if (message.content.startsWith('G.users')){
- if(!message.author.id === '434263373077544961') return;
+ if(!message.author.id === '536928110055260170') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
 m.sendMessage(args)
@@ -2935,7 +2935,7 @@ client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id == 536928110055260170536928110055260170) return;
+  if (message.author.id == 536928110055260170) return;
 
 
 if (message.content.startsWith(prefix + 'playing')) {
@@ -3524,4 +3524,4 @@ client.on('guildMemberAdd', member => {
 return channel.send("")
     }
     )});
-client.login(process.env.BOT_TOKEN)
+client.login(process.env.codebot)
