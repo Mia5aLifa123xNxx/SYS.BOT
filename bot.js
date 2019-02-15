@@ -27,7 +27,7 @@ const youtube = new YouTube("AIzaSyAdORXg7UZUo7sePv97JyoDqtQVi3Ll0b8");
 const sql = require("sqlite");
 const dateFormat = require('dateformat'); 
 const pretty = require('pretty-ms') 
-const prefix = '<o/;
+const prefix = '<o/';
 var table = require('table').table
 var ti={}  
 ,spee={}
@@ -379,7 +379,7 @@ client.on('message', msg => {
 };
 });
 client.on('message', message => {
-    if (message.content.startsWith("G.trans")) {
+    if (message.content.startsWith(prefix + "trans")) {
       
     let toTrans = message.content.split(' ').slice(1);
     let language;
@@ -404,7 +404,7 @@ client.on('message', message => {
                 timestamp: new Date(),
                 footer: {
                   icon_url: client.user.avatarURL,
-                  text: "3bker Community ©"
+                  text: "BearBoy01 Community ©"
                 }
             }}
             )
@@ -485,7 +485,7 @@ if (command == "z5rf") {
 });
 
 client.on('message', message => {
-    if (message.content === "G.rooms") {
+    if (message.content === prefix + "rooms") {
         if (message.author.bot) return
                       if (!message.guild) return;
 
@@ -649,13 +649,13 @@ message.channel.send({embed});
 }
 });
 client.on('message', message => {
-    if (message.content.startsWith("G.bans")) {
+    if (message.content.startsWith(https://discord.gg/RR7UKPSprefix + "bans")) {
         message.guild.fetchBans()
         .then(bans => message.channel.send(`Number of banned persons **${bans.size}** `))
 }
 });
 client.on('message', message => {
-    if (message.content.startsWith("G.avatar")) {
+    if (message.content.startsWith(prefix + "avatar")) {
 if(!message.channel.guild) return;
         var mentionned = message.mentions.users.first();
     var client;
@@ -715,7 +715,7 @@ message.channel.send(
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
-  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/xA8s2AU**")
+  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/RR7UKPS**")
      
      
   message.channel.sendEmbed(embed);
@@ -743,7 +743,7 @@ let embed = new Discord.RichEmbed()
      .setAuthor(message.author.username, message.author.avatarURL)
      .setDescription(':mailbox_with_mail: تم ارسال الرسالة الى صاحب البوت بنجاح')
      .setThumbnail(message.author.avatarURL)
-     .setFooter("By : 3bker")
+     .setFooter("By : Bearboy01536928110055260170")
                                                 
 
 message.channel.send(embed);
@@ -1899,7 +1899,7 @@ client.on('guildCreate', guild => {
   New Server Add BearBoy01 Community © ?
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
-client.channels.get("474127377245667328").sendEmbed(embed)
+client.channels.get("536928110055260170").sendEmbed(embed)
 });
 client.on('guildDelete', guild => {
          const embed = new Discord.RichEmbed()
@@ -1907,7 +1907,7 @@ client.on('guildDelete', guild => {
      .setTitle('Click Here To Add Bot .!')
      .setURL('https://discordapp.com/oauth2/authorize?client_id=435392018693488641&scope=bot&permissions=2146958591')
   .setDescription(`**
-  Server Kicked 3bker Community © :cry:
+  Server Kicked BearBoy01 Community © :cry:
 اسم السيرفر: ${guild.name}
 صاحب السيرفر: ${guild.owner}**`);
 client.channels.get("536928110055260170").sendEmbed(embed)
@@ -2459,7 +2459,7 @@ const zead = [
    '*** انتظر الجزء الثاني عندما يوصل البوت 100 سيرفر , ساعدني في نشر البوت وادخل هذا السيرفر  ***'
 ];
  client.on('message', message => {
- if (message.content.startsWith('G.مريم')) {
+ if (message.content.startsWith(prefix + 'مريم')) {
   var mariam= new Discord.RichEmbed()
   .setTitle("لعبة مريم ..")
   .setColor('RANDOM')
@@ -2886,7 +2886,7 @@ if (message.content.startsWith(adminprefix + 'setgame')) {//by ,$ ReBeL ء , ??#
   client.user.setGame(argresult);
     message.channel.sendMessage(`**${argresult} تم تغيير بلاينق البوت إلى **`)
 } else 
-  if (message.content.startsWith(adminprefix + 'setname')) {
+  if (message.content.startsWith(prefix + 'setname')) {
 client.user.setUsername(argresult).then
     message.channel.sendMessage(`**${argresult}** : تم تغيير أسم البوت إلى`)
 return message.reply("**لا يمكنك تغيير الاسم يجب عليك الانتظآر لمدة ساعتين . **");
@@ -2935,7 +2935,7 @@ client.on('message', message => {
   if (!message.content.startsWith(prefix)) return;
   var args = message.content.split(' ').slice(1);
   var argresult = args.join(' ');
-  if (message.author.id == 410835593451405312) return;
+  if (message.author.id == 536928110055260170536928110055260170) return;
 
 
 if (message.content.startsWith(prefix + 'playing')) {
@@ -3468,7 +3468,7 @@ room.send(tests);
 }
 });
 client.on('message', message => {
-if(message.content.includes("<@435392018693488641>")) {
+if(message.content.includes("<@536928110055260170>")) {
 message.channel.startTyping()
 setTimeout(() => { 
 message.channel.stopTyping()
